@@ -12,7 +12,7 @@ import (
 
 func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 	const expectedCount = 4
-	const count = 6
+	const count = 7
 
 	url := fmt.Sprintf("/count?count=%d&city=%s", count, "moscow")
 	req := httptest.NewRequest("GET", url, nil) // здесь нужно создать запрос к сервису
